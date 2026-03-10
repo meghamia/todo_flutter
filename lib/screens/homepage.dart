@@ -94,7 +94,8 @@ class HomePage extends StatelessWidget {
               taskController.clear();
               Get.back();
             });
-      }),
+      },  child: Icon(Icons.add),   // 👈 ADD THIS
+    ),
     );
   }
 }
