@@ -4,14 +4,13 @@ import '../screens/homepage.dart';
 
 import 'package:flutter/material.dart';
 
-
 class AuthController extends GetxController {
 
   final FirebaseAuth _auth = FirebaseAuth.instance;
 
   RxBool isLoading = false.obs;
 
-  /// SIGNUP
+  /// SIGNUP*-++-
   Future signUp(String email, String password) async {
 
     /// EMAIL VALIDATION
@@ -23,7 +22,6 @@ class AuthController extends GetxController {
       );
       return;
     }
-
     /// PASSWORD VALIDATION
     if (password.length < 8) {
       Get.snackbar(
@@ -206,3 +204,4 @@ class AuthController extends GetxController {
 
 
 }
+
